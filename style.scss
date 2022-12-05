@@ -223,7 +223,7 @@ $gray: #F3F3F3;
         line-height: 170%;
     }
 
-    &__slogan{
+    &__slogan {
         padding-bottom: 10%;
     }
 
@@ -277,17 +277,18 @@ $gray: #F3F3F3;
 
     &__chat {
         z-index: 3;
-        &__img{
-            img{
+
+        &__img {
+            img {
                 position: relative;
                 left: 0;
                 top: 0;
                 width: 100%;
                 height: auto;
             }
-            
+
         }
-       
+
     }
 
     &__portal {
@@ -311,43 +312,41 @@ $gray: #F3F3F3;
 }
 
 @media(max-width: 400px) {
-    .section-voice-control {
-        position: relative;
+    body {
+        .section-voice-control {
+            position: relative;
 
-        .slogan-top-mob,
-        .slogan-bottom-mob {
-            font-size: 36px;
-        }
+            .slogan-top-mob,
+            .slogan-bottom-mob {
+                font-size: 36px;
+            }
 
-        &__girl-model {
-
-            left: 20%;
-            top: 0;
-            width: 100%;
-            height: auto;
-        }
-
-        &__portal{
-            left: -35%;
-        }
-
-        &__girl-img {
-            img {
-               
+            &__girl-model {
+                left: -10%;
                 top: 0;
-                width: 200px;
+                width: 50%;
                 height: auto;
             }
-        }
 
-        .chat {
-            &__img {
+            &__portal {
+                left: -60%;
+            }
+
+            &__girl-img {
                 img {
-                    position: relative;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
+                    width: 200px;
                     height: auto;
+                }
+            }
+
+            .chat {
+                &__img {
+                    width: 200px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
         }
@@ -424,6 +423,52 @@ $gray: #F3F3F3;
 
 }
 
+@media(max-width:1780px) {
+    .section-voice-control {
+        &__title {
+            font-size: 38px;
+            line-height: 34px;
+            padding-top: 15px;
+        }
+
+        &__text {
+            font-size: 20px;
+            line-height: 34px;
+        }
+
+        &__slogan {
+            &-top {
+                font-size: 38px;
+            }
+
+            &-bottom {
+                font-size: 58px;
+            }
+        }
+
+        &__girl-img {
+            left: 14%;
+
+            img {
+
+                top: 0;
+                width: 380px;
+                height: auto;
+            }
+        }
+
+        .chat {
+            &__img img {
+
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 33.33vw; //640px;
+                height: auto;
+            }
+        }
+    }
+}
 
 @keyframes portal {
     0% {

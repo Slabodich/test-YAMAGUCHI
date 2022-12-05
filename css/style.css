@@ -214,31 +214,30 @@
 }
 
 @media (max-width: 400px) {
-  .section-voice-control {
+  body .section-voice-control {
     position: relative;
   }
-  .section-voice-control .slogan-top-mob,
-.section-voice-control .slogan-bottom-mob {
+  body .section-voice-control .slogan-top-mob,
+body .section-voice-control .slogan-bottom-mob {
     font-size: 36px;
   }
-  .section-voice-control__girl-model {
-    left: 20%;
+  body .section-voice-control__girl-model {
+    left: -10%;
     top: 0;
-    width: 100%;
+    width: 50%;
     height: auto;
   }
-  .section-voice-control__portal {
-    left: -35%;
+  body .section-voice-control__portal {
+    left: -60%;
   }
-  .section-voice-control__girl-img img {
-    top: 0;
+  body .section-voice-control__girl-img img {
     width: 200px;
     height: auto;
   }
-  .section-voice-control .chat__img img {
-    position: relative;
-    left: 0;
-    top: 0;
+  body .section-voice-control .chat__img {
+    width: 200px;
+  }
+  body .section-voice-control .chat__img img {
     width: 100%;
     height: auto;
   }
@@ -296,6 +295,38 @@
   .section-voice-control__slogan-bottom-mob {
     font-size: 38px;
     margin-top: 10px;
+  }
+}
+@media (max-width: 1780px) {
+  .section-voice-control__title {
+    font-size: 38px;
+    line-height: 34px;
+    padding-top: 15px;
+  }
+  .section-voice-control__text {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .section-voice-control__slogan-top {
+    font-size: 38px;
+  }
+  .section-voice-control__slogan-bottom {
+    font-size: 58px;
+  }
+  .section-voice-control__girl-img {
+    left: 14%;
+  }
+  .section-voice-control__girl-img img {
+    top: 0;
+    width: 380px;
+    height: auto;
+  }
+  .section-voice-control .chat__img img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 33.33vw;
+    height: auto;
   }
 }
 @-webkit-keyframes portal {
