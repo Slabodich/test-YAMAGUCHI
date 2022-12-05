@@ -285,6 +285,20 @@ $gray: #F3F3F3;
 
 }
 
+@media(max-width: 400px){
+
+    .section-voice-control {
+       
+
+        .slogan-top-mob,
+        .slogan-bottom-mob {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    }
+
+}
+
 @media(max-width: 1850px) {
     .section-voice-control {
         display: flex;
