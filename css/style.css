@@ -5,6 +5,7 @@
   font-weight: 300;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 .section-ergonomics .table {
@@ -74,7 +75,7 @@
     margin-right: 5%;
   }
 }
-@media (max-width: 1850px) {
+@media (max-width: 1520px) {
   .section-ergonomics {
     flex-wrap: wrap;
   }
@@ -118,11 +119,13 @@
   height: 100vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 4%;
 }
 .section-voice-control__about {
-  margin-left: 5%;
+  padding: 20px;
 }
 .section-voice-control__title {
   font-style: normal;
@@ -135,6 +138,9 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 170%;
+}
+.section-voice-control__slogan {
+  padding-bottom: 10%;
 }
 .section-voice-control__slogan-top {
   font-style: normal;
@@ -159,9 +165,9 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 90px;
+  height: 18vh;
   left: 0;
-  bottom: 0;
+  bottom: -11.9vh;
   background-color: #181818;
   background-image: url("../img/bg-dots.svg");
   z-index: 2;
@@ -172,11 +178,22 @@
   position: absolute;
 }
 .section-voice-control__girl-img img {
+  left: 0%;
+  top: 0;
+  width: 100%;
+  height: auto;
   -webkit-animation: levitate 2s infinite alternate;
           animation: levitate 2s infinite alternate;
 }
 .section-voice-control__chat {
   z-index: 3;
+}
+.section-voice-control__chat__img img {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
 .section-voice-control__portal {
   align-self: flex-end;
@@ -202,19 +219,18 @@
   }
   .section-voice-control .slogan-top-mob,
 .section-voice-control .slogan-bottom-mob {
-    font-family: "Courier New", Courier, monospace;
+    font-size: 36px;
   }
   .section-voice-control__girl-model {
-    left: 5%;
+    left: 20%;
     top: 0;
     width: 100%;
     height: auto;
   }
   .section-voice-control__portal {
-    left: -10%;
+    left: -35%;
   }
   .section-voice-control__girl-img img {
-    left: 0%;
     top: 0;
     width: 200px;
     height: auto;
@@ -227,7 +243,7 @@
     height: auto;
   }
 }
-@media (max-width: 1850px) {
+@media (max-width: 1520px) {
   .section-voice-control {
     display: flex;
     flex-direction: column;
@@ -242,7 +258,6 @@
     padding-top: 15px;
   }
   .section-voice-control__girl-img {
-    margin-left: 19%;
     z-index: 0;
   }
   .section-voice-control__girl-model {

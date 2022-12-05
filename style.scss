@@ -12,6 +12,7 @@ $gray: #F3F3F3;
     font-weight: 300;
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
 
 
@@ -135,7 +136,7 @@ $gray: #F3F3F3;
 
 }
 
-@media (max-width: 1850px) {
+@media (max-width: 1520px) {
     .section-ergonomics {
         flex-wrap: wrap;
 
@@ -197,12 +198,15 @@ $gray: #F3F3F3;
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     overflow: hidden;
+    padding: 4%;
 
 
     &__about {
-        margin-left: 5%;
+
+        padding: 20px;
     }
 
     &__title {
@@ -217,6 +221,10 @@ $gray: #F3F3F3;
         font-weight: 400;
         font-size: 22px;
         line-height: 170%;
+    }
+
+    &__slogan{
+        padding-bottom: 10%;
     }
 
     &__slogan-top {
@@ -245,9 +253,9 @@ $gray: #F3F3F3;
             content: "";
             position: absolute;
             width: 100%;
-            height: 90px;
+            height: 18vh;
             left: 0;
-            bottom: 0;
+            bottom: -11.9vh;
             background-color: $black;
             background-image: url("../img/bg-dots.svg");
             z-index: 2;
@@ -259,12 +267,27 @@ $gray: #F3F3F3;
         position: absolute;
 
         img {
+            left: 0%;
+            top: 0;
+            width: 100%;
+            height: auto;
             animation: levitate 2s infinite alternate;
         }
     }
 
     &__chat {
         z-index: 3;
+        &__img{
+            img{
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+       
     }
 
     &__portal {
@@ -293,25 +316,24 @@ $gray: #F3F3F3;
 
         .slogan-top-mob,
         .slogan-bottom-mob {
-            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
         }
 
         &__girl-model {
 
-            left: 5%;
+            left: 20%;
             top: 0;
             width: 100%;
             height: auto;
         }
 
-        &__portal {
-            left: -10%;
+        &__portal{
+            left: -35%;
         }
 
         &__girl-img {
             img {
-
-                left: 0%;
+               
                 top: 0;
                 width: 200px;
                 height: auto;
@@ -333,7 +355,7 @@ $gray: #F3F3F3;
 
 }
 
-@media(max-width: 1850px) {
+@media(max-width: 1520px) {
     .section-voice-control {
         display: flex;
         flex-direction: column;
@@ -349,7 +371,6 @@ $gray: #F3F3F3;
         }
 
         &__girl-img {
-            margin-left: 19%;
             z-index: 0;
         }
 
