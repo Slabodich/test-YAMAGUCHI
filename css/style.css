@@ -5,7 +5,7 @@
   font-weight: 300;
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .section-ergonomics .table {
   left: -1%;
@@ -197,33 +197,34 @@
 }
 
 @media (max-width: 400px) {
-  .section-voice-control__girl-img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .section-voice-control__chat {
-    z-index: 5;
-  }
-  .section-voice-control__chat__img {
-    width: 150px;
-    padding: 10px;
-  }
-  .section-voice-control__chat__img img {
-    width: 100px;
-  }
-  .section-voice-control__slogan-top, .section-voice-control__slogan-bottom {
-    display: none;
+  .section-voice-control {
+    position: relative;
   }
   .section-voice-control .slogan-top-mob,
 .section-voice-control .slogan-bottom-mob {
     font-family: "Courier New", Courier, monospace;
   }
-  .section-voice-control__slogan-top-mob {
-    left: 0;
+  .section-voice-control__girl-model {
+    left: 5%;
+    top: 0;
+    width: 100%;
+    height: auto;
   }
-  .section-voice-control__slogan-bottom-mob {
-    font-size: 18px;
-    margin-top: 10px;
+  .section-voice-control__portal {
+    left: -10%;
+  }
+  .section-voice-control__girl-img img {
+    left: 0%;
+    top: 0;
+    width: 200px;
+    height: auto;
+  }
+  .section-voice-control .chat__img img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 1850px) {
