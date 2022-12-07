@@ -1,4 +1,3 @@
-
 .section-voice-control {
     background-color: $black;
     font-family: 'Montserrat', sans-serif;
@@ -71,9 +70,11 @@
             z-index: 2;
         }
     }
-    .zap{
+
+    .zap {
         animation: move-up 4s ease-out forwards, inviz 4s ease;
-   }
+    }
+
     &__girl-img {
         //animation: move-up 4s ease-out forwards, inviz 4s ease;
         position: absolute;
