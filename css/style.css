@@ -172,9 +172,11 @@
   background-image: url("../img/bg-dots.svg");
   z-index: 2;
 }
-.section-voice-control__girl-img {
+.section-voice-control .zap {
   -webkit-animation: move-up 4s ease-out forwards, inviz 4s ease;
           animation: move-up 4s ease-out forwards, inviz 4s ease;
+}
+.section-voice-control__girl-img {
   position: absolute;
 }
 .section-voice-control__girl-img img {

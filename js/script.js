@@ -9,7 +9,7 @@ upButton.addEventListener("click", function () {
     this.classList.remove("table__up-btn-disabled");
     downButton.classList.remove("table__down-btn-disabled");
     heightCounter++;
-    upTablePart.style.top = `${heightCounter * -10}px` ;
+    upTablePart.style.top = `${heightCounter * -10}px`;
     if (heightCounter >= 3) {
       this.classList.add("table__up-btn-disabled");
     }
@@ -23,7 +23,7 @@ downButton.addEventListener("click", function () {
     this.classList.remove("table__down-btn-disabled");
     upButton.classList.remove("table__up-btn-disabled");
     heightCounter--;
-    upTablePart.style.top = `${heightCounter * -10}px` 
+    upTablePart.style.top = `${heightCounter * -10}px`
     if (heightCounter <= -3) {
       this.classList.add("table__down-btn-disabled");
     }
@@ -31,3 +31,10 @@ downButton.addEventListener("click", function () {
     this.classList.add("table__down-btn-disabled");
   }
 });
+
+var controller = new ScrollMagic.Controller();
+
+var scene = new ScrollMagic.Scene({ triggerElement: "#trigger1" })
+  // trigger animation by adding a css class
+  .setClassToggle(".section-voice-control__girl-img", "zap")
+  .addTo(controller);
